@@ -1,0 +1,179 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffeaea; /* Whole page background */
+}
+.navbar {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main{
+    /* width: 100vh; */
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffeaea;
+}
+
+
+/* Search Form Styles */
+.search-form {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.search-form select,
+.search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    background-color: #e60023;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #c7001d;
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Removes space between borders */
+    margin-top: 20px; /* Adds margin to the top of the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Adds borders */
+    text-align: left; /* Aligns text to the left */
+    padding: 10px; /* Adds padding in each cell */
+}
+
+th {
+    background-color: #f4f4f4; /* Light background for headers */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlights row on hover */
+}
+
+
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+footer div {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.div-1 {
+    padding: 0px 60px;
+}
+
+footer h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: medium;
+    margin-bottom: 8px;
+    color: #f1faee;
+}
+
+.footer-icon i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-icon i:hover {
+    color: #a8dadc;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-form {
+        flex-direction: column; /* Stacks form elements on smaller screens */
+        gap: 20px;
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column; /* Stacks footer sections vertically */
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for mobile screens */
+    }
+
+    td, th {
+        padding: 10px; /* More space in each cell on mobile */
+    }
+}

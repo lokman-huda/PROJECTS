@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+.navbar {
+    background-color:red; 
+    color: white;
+    padding: 0px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+main {
+    background-color: #ffeaea;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+    }
+main resitation-contant{
+    justify-content: right;
+}
+.registration-form {
+
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+
+}
+.registration-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e60023;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #e60023;
+}
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+.submit-button {
+    background-color: #e60023;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.submit-button:hover {
+    background-color: #c7001d;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .form-group {
+        flex: 1 1 100%; /* Ensure all fields stack in smaller screens */
+    }
+}
+
+.resitation-contant{
+    width: 30%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    justify-content: right;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.resitation-contant h1{
+    color: #0096e6;
+    text-align: center;
+    font-size: 25px;
+}
+.resitation-contant ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+
+}
+.resitation-contant li {
+    /* background-color: #fff;
+    border: 1px solid #ddd; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.resitation-contant li span {
+    font-weight: bold;
+}
+.highlight {
+    color: #e60000;
+}
+
+
+/* this footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; 
+    padding: 30px; /* Inner spacing of the footer */
+    background-color: #ff0000; /* Background color for footer */
+    color: #ffffff; /* Default text color */
+
+}
+
+footer div {
+    flex: 1; /* Make each division take equal width */
+    padding: 0 15px; /* Add padding around each section */
+}
+.div-1{
+    padding: 0px 60px 0px 60px;
+}
+
+footer h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff; /* Headings color */
+}
+
+footer p {
+    font-size: medium;
+    margin-bottom: 8px;
+    color: #f1faee; /* Slightly lighter text color */
+}
+
+.footer-icon i {
+    margin-right: 10px; /* Add space between icons */
+    font-size: 20px;
+    color: #ffffff; /* Default color for icons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-icon i:hover {
+    color: #a8dadc; /* Change icon color on hover */
+}
+
+footer p:hover {
+    text-decoration: underline; /* Add underline effect on hover for text links */
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center align text */
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+}
